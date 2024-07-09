@@ -1,0 +1,22 @@
+[versions]
+kotlin = "2.0.0"
+android = "8.5.0"
+compose = "1.6.11"
+moko = "0.24.1"
+
+[libraries]
+androidx-appcompat = "androidx.appcompat:appcompat:1.7.0"
+androidx-core = "androidx.core:core-ktx:1.13.1"
+androidx-activity = "androidx.activity:activity-compose:1.9.0"
+
+moko-resources = { module = "dev.icerock.moko:resources", version.ref = "moko" }
+moko-resources-compose = { module = "dev.icerock.moko:resources-compose", version.ref = "moko" }
+
+[plugins]
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-app = { id = "com.android.application", version.ref = "android" }
+android-library = { id = "com.android.library", version.ref = "android" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+compose-jb = { id = "org.jetbrains.compose", version.ref = "compose" }
+moko-resources = { id = "dev.icerock.mobile.multiplatform-resources", version.ref = "moko" }

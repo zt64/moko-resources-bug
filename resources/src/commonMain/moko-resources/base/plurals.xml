@@ -1,0 +1,5 @@
+<resources>
+    <plural name="views">
+        <item quantity="one">1 view</item>
+    </plural>
+</resources>
